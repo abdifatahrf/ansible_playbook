@@ -1,0 +1,14 @@
+---
+- name: display output
+  hosts: all
+  become: yes
+  tasks:
+   - name: create user
+     user: 
+       name: lalita
+       password: baba
+     register: a
+
+   - name: display var
+     debug:
+       var: a    
