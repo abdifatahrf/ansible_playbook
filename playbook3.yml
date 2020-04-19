@@ -1,0 +1,10 @@
+---
+- name: user creation papa
+  hosts: webserver
+  tasks:
+    - name: create user
+      user:
+        name: "{{a}}"
+        password: "{{b}}"
+        home: "{{c}}"
+        uid: "{{d}}"

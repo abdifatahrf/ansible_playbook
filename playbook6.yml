@@ -1,0 +1,13 @@
+--- 
+- name: playbook5
+  hosts: all
+  become: yes
+  tasks:
+    - name: creat multiple users
+      user:
+        name: "{{item.a}}"
+        password: "{{item.b}}"
+        home: "{{item.c}}"
+      with_items:
+        - {a: nura,b: 123,c: /home/nura}
+        - {a: abdi,b: 124,c: /home/abdi}

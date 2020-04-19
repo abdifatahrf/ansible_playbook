@@ -1,0 +1,9 @@
+---
+- name: installing nana
+  hosts: 172.31.17.218  
+  tasks:
+    - name: installing tree
+      apt: 
+        name: "{{a}}"
+        state: "{{b}}"
+        update_cache: "{{c}}"
