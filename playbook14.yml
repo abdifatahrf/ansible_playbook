@@ -1,0 +1,6 @@
+---
+- name: creating directory
+  hosts: all
+  tasks:
+   - name: call child playbook
+     include: playbook13.yml

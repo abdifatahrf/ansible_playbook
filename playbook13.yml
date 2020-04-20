@@ -1,0 +1,6 @@
+---
+ - name:  create dir
+   file:
+     name: /home/ubuntu/dir12
+     state: touch
+
